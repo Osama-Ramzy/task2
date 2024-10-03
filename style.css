@@ -1,0 +1,411 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+ margin: 0;
+ padding: 0;
+ font-family:"Noto Serif",
+  serif
+}
+
+.banner{
+ height: 100vh;
+ width: 100%;
+ background: linear-gradient(black, rgba(0, 0, 0, 0.5)), url(img/banner.png);
+ background-position: center center ;
+ background-size: cover;
+ position: relative;
+
+ 
+}
+.container{
+ display: flex;
+ width: 90%;
+ margin: auto;
+ justify-content: space-between;
+
+
+}
+img{
+ width: 150px;
+ margin-top: 25px
+}
+ul{
+ width: 40%;
+ display: flex;
+ justify-content:space-around;
+ margin-top: 8px;
+ list-style: none;
+ margin-top:30px
+}
+ul li::after{
+ content: '';
+ width: 0%;
+ height: 2px;
+ margin: auto;
+ display: block;
+ background-color: tomato;
+ transition: .5s;
+
+}
+ul li:hover::after{
+  width: 100%;
+
+}
+a{
+ text-decoration: none;
+ color: white;
+}
+a:hover{
+  color: white;
+}
+.content{
+ text-align: center;
+ width: 53%;
+ 
+}
+.con{
+ height:80vh;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+.content p{
+ padding: 20px;
+ color: white;
+}
+.content h1{
+ color: white;
+}
+.content button{
+ padding: 5px 10px;
+  background:none;
+  color: white;
+  border-color: white;
+  border: solid;
+  
+}
+.content button:hover {
+ background-color: tomato;
+ cursor:pointer;
+ transition: 1s;
+}
+.letter{
+
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  margin-top:50px;
+  margin-bottom: 50px;
+}
+.letter p{
+  font-size: small;
+  margin-top: 10px;
+}
+.boxs{
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+
+}
+.box1{
+  background-color: antiquewhite;
+  width: 25%;
+  text-align: center;
+  padding: 20px;
+}
+.box1 h2{
+  margin: 20px;
+}
+.box2{
+  background-color: antiquewhite;
+  width: 25%;
+  text-align: center;
+  padding: 20px;
+}
+.box2 h2{
+  margin: 20px;
+}
+.box3{
+  background-color: antiquewhite;
+  width: 25%;
+  text-align: center;
+  padding: 20px;
+}
+.box3 h2{
+  margin: 20px;
+}
+.box3:hover{
+  box-shadow:4px 4px 10px rgba(0,0,0,0.5);
+  transition: 1s;
+}
+.box1:hover{
+  box-shadow:4px 4px 10px rgba(0,0,0,0.5);
+  transition: 1s;
+}
+.box2:hover{
+  box-shadow:4px 4px 10px rgba(0,0,0,0.5);
+  transition: 1s;
+}
+.dark{
+  width: 100%;
+  height: 10vh;
+  background-color: antiquewhite;
+}
+.lette{
+  margin: auto;
+  width: 50%;
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 80px;
+}
+.lette p{
+  padding: 10px;
+}
+.photos{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+ 
+}
+
+.photo1{
+  width: 27%;
+  padding: 10px;
+}
+.photo1 img{
+  width: 90%;
+  border-radius: 10px;
+  transition: transform .5s ease;
+}
+.photo1 img:hover{
+  transform: scale(1.1);
+}
+
+.photo2{
+  width: 27%;
+    padding: 10px;
+}
+.photo2 img{
+  width: 90%;
+  border-radius: 10px;
+  transition: transform .5s ease;
+}
+.photo2 img:hover {
+  transform: scale(1.1);
+}
+.photo3{
+  width: 27%;
+  padding: 10px;
+}
+.photo3 img{
+  width: 90%;
+  border-radius: 10px;
+  transition: transform .5s ease;
+}
+.photo3 img:hover {
+  transform: scale(1.1);
+}
+.photos h3{
+  margin: 15px 0px;
+}
+.lett{
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  margin-top: 80px;
+}
+.lett p {
+  padding: 10px;
+}
+.profile{
+
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 50px;
+}
+
+.profile1{
+ display: flex;
+ width: 40%;
+ background-color: rgba(232, 200, 191, 0.527);
+ padding: 15px 0px;
+ padding-right: 10px;
+}
+.profile1:hover{
+  cursor: pointer;
+}
+.profile1 img{
+  margin-top: 0px;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  margin: 20px;
+  margin-top: 0;
+}
+.profile1 h4{
+  margin: 15px 0px;
+}
+.profile2{
+ display: flex;
+ width: 40%;
+ background-color: rgba(232, 200, 191, 0.527);
+ padding: 15px 0px;
+ padding-right: 10px;
+}
+.profile2 img{
+  margin-top: 0px;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  margin: 20px;
+  margin-top: 0;
+}
+.profile2 h4{
+  margin: 15px 0px;
+}
+.profile2:hover {
+  cursor: pointer;
+}
+.contact{
+  border-radius: 10px;
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items:center ;
+  width: 70%;
+  height: 300px;
+  margin: auto;
+  margin-top: 90px;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/banner2.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.le{
+
+  width:70%;
+  text-align: center;
+}
+.le h3{
+  font-size: 30px;
+  color: white;
+  margin-top: 50px;
+
+}
+.le button{
+  margin-top: 50px;
+  margin-bottom: 40px;
+  padding: 10px 20px;
+  background-color: transparent;
+  border: 3px solid white;
+  color: white;
+}
+.le button:hover{
+  background-color: tomato;
+  cursor: pointer;
+  transition: 1s;
+}
+i{
+  color: tomato;
+  
+}
+.end{
+  width: 60%;
+  margin: auto;
+  text-align: center;
+  margin-top: 90px;
+}
+.end h3{
+    margin-bottom: 30px;
+}
+.end i{
+  padding: 10px;
+}
+.end i:hover{
+  cursor: pointer;
+}
+@media screen and (max-width:600px) {
+  .banner{
+    height:100vh;
+  }
+  .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  ul{
+    width: 100%;
+  }
+  .content {
+   width: 100%;
+  
+  }
+  .letter h2{
+    font-size: 40px;
+  }
+  .boxs{
+    flex-direction: column;
+    align-items: center;
+  }
+  .box1{
+    width: 60%;
+  }
+  .box2{
+    width: 60%;
+  }
+  .box3{
+    width: 60%;
+  }
+  .lette{
+    width: 100%;
+    margin-bottom: 0;
+  }
+  .lette h2{
+    font-size: 40px;
+  }
+  .photos{
+    flex-direction: column;
+    align-items: center;
+  }
+  .photo1{
+    width: 80%;
+  }
+  .photo2{
+    width: 80%;
+  }
+  .photo3{
+    width: 80%;
+  }
+  .lett{
+    width: 80%;
+  }
+  .lett h2{
+    font-size: 35px;
+  }
+  .profile{
+    flex-direction: column;
+    align-items: center;
+  }
+  .profile1{
+    width: 80%;
+  }
+  .profile2{
+    width: 80%;
+  }
+  .contact{
+    height: 500px;
+    width: 90%;
+    border-radius: 10px;
+  }
+  .le{
+    width: 100%;
+  }
+  .end{
+    width: 90%;
+    text-align: center;
+  }
+  .end h3{
+    margin-bottom: 30px;
+  }
+}
